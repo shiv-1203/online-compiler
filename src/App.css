@@ -1,0 +1,222 @@
+.App {
+	max-height: 100vh;
+	width: 100%;
+	background-color: white;
+  font-family: monospace;
+}
+
+.main {
+	display: block;
+	height: calc(100vh - 50px);
+}
+
+.left-container {
+	position: relative;
+	display: block;
+  width: 100%;
+	max-height: 500px;
+  border: 1px solid black;
+}
+
+.right-container-dark {
+	/* height: calc(100vh - 50px); */
+	display: flex;
+	flex-direction: column;
+	background-color: #242424;
+	border-left: 3px solid #1f65e6;
+	padding: 5px;
+}
+
+.right-container-light {
+	/* height: calc(100vh - 50px); */
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	border-left: 3px solid black;
+	padding: 5px;
+}
+
+.input-box {
+  min-height: 300px;
+  padding: 5px;
+}
+
+.border-input-output{
+  border: 2px solid black;
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.input-box textarea {
+	font-size: 16px;
+  min-height: 300px;
+}
+
+.spinner-box {
+	flex: 50%;
+	background-color: #242424;
+	overflow-y: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.spinner-box img {
+	width: 200px;
+}
+
+.output-box-dark {
+	background-color: #242424;
+	/* overflow-y: auto; */
+  min-height: 200px;
+	color: white;
+	position: relative;
+}
+
+.output-box-light {
+	background-color: rgb(255, 243, 219);
+	/* overflow-y: auto; */
+  min-height: 200px;
+	color: black;
+	position: relative;
+  margin: 5px;
+  border: 1px solid black;
+}
+
+.clear-btn-dark {
+	position: absolute;
+	bottom: 14px;
+	right: 18px;
+	width: 80px;
+	height: 40px;
+	font-size: 18 px;
+	font-weight: bold;
+	color: black;
+	background-color: white;
+	border: none;
+	border-radius: 4px;
+	transition: 0.3s;
+	cursor: pointer;
+  font-family: monospace;
+}
+
+.clear-btn-light {
+	position: absolute;
+	bottom: 14px;
+	right: 18px;
+	width: 80px;
+	height: 40px;
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+	background-color: black;
+	border: none;
+	border-radius: 4px;
+	transition: 0.3s;
+	cursor: pointer;
+  font-family: monospace;
+}
+
+.clear-btn-dark:hover{
+  background-color: rgb(218, 217, 217);
+}
+
+.output-box-dark pre {
+	font-size: 15px;
+	white-space: pre-wrap;
+}
+
+.output-box-light pre {
+	font-size: 15px;
+	white-space: pre-wrap;
+}
+
+.title-dark {
+  font-size: 18px;
+	color: #afec3f;
+  font-family: monospace;
+  margin-bottom: 2px;
+}
+
+.title-light {
+  font-size: 18px;
+	color: black;
+  font-family: monospace;
+  margin-bottom: 2px;
+}
+
+#code-inp-dark {
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	resize: none;
+	background-color: #242424;
+	color: whitesmoke;
+	padding: 10px;
+}
+
+#code-inp-dark::placeholder{
+  color: rgba(255, 255, 255, 0.558);
+}
+
+#code-inp-dark:focus {
+	outline: none;
+}
+
+#code-inp-light {
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	resize: none;
+	background-color: rgb(255, 243, 219);
+	color: black;
+	padding: 10px;
+}
+
+#code-inp-light::placeholder{
+  color: gray;
+}
+
+#code-inp-light:focus {
+	outline: none;
+}
+
+.run-btn-dark {
+	position: absolute;
+	bottom: 10px;
+	right: 18px;
+	width: 80px;
+	height: 40px;
+	font-size: 22px;
+	font-weight: bold;
+	background-color: #afec3f;
+	border: none;
+	border-radius: 4px;
+	transition: 0.3s;
+	cursor: pointer;
+  font-family: monospace;
+  margin-bottom: 10px;
+}
+
+.run-btn-dark:hover{
+	background-color: #5d8f00;
+}
+
+.run-btn-light{
+  position: absolute;
+	bottom: 10px;
+	right: 18px;
+	width: 80px;
+	height: 40px;
+	font-size: 22px;
+	font-weight: bold;
+	background-color: black;
+  color: white;
+	border: none;
+	border-radius: 4px;
+	transition: 0.3s;
+	cursor: pointer;
+  font-family: monospace;
+  margin-bottom: 10px;
+}
