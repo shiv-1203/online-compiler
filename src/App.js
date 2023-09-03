@@ -42,7 +42,7 @@ function App() {
     }
 
     // Post request to compile endpoint
-    Axios.post(`http://localhost:8080/api/postCode`, {
+    Axios.post(`https://online-compiler-fu07.onrender.com/api/postCode`, {
         code: userCode,
         language: userLang,
         input: userInput
