@@ -130,6 +130,7 @@
 .output-box-light pre {
 	font-size: 15px;
 	white-space: pre-wrap;
+	padding:10px;
 }
 
 .title-dark {
@@ -143,7 +144,7 @@
   font-size: 18px;
 	color: black;
   font-family: monospace;
-  margin-bottom: 10px;
+  margin-bottom: 2px;
 }
 
 #code-inp-dark {
