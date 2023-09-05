@@ -43,6 +43,7 @@ function App() {
 
     // Post request to compile endpoint
     console.log(userCode,userLang,userInput);
+    console.log("compile executed...");
     Axios.post(`https://online-compiler-z46n.onrender.com/api/postCode`, {
         code: userCode,
         language: userLang,
