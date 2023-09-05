@@ -49,8 +49,12 @@ function App() {
         language: userLang,
         input: userInput
     }).then((res) => {
+      if(res.data.output!==""){
         setUserOutput(res.data.output);
-        console.log(res.data.output);
+      }
+      else{
+        setUserOutput(res.data.error);
+      }
     }).then(() => {
         setLoading(false);
     })
