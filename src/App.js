@@ -48,6 +48,7 @@ function App() {
         input: userInput
     }).then((res) => {
         setUserOutput(res.data.output);
+        console.log(res.data.output);
     }).then(() => {
         setLoading(false);
     })
